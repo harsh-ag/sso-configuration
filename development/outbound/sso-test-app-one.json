@@ -41,8 +41,8 @@
       "dataMappings": [
         {
           "type": "static",
-          "key": "TestKey",
-          "value": "testvalue"
+          "key": "Test Key",
+          "value": "primary_first_name"
         }
       ]
     }
