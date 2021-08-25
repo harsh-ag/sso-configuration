@@ -1,9 +1,9 @@
 {
   "is_token_endpoint_ip_header_trusted": false,
-  "name": "sso-test-app-one",
+  "name": "sso-test",
   "description": "",
   "callbacks": [
-    "https://sso-admin-test.herokuapp.com/saml/acs"
+    "https://herokuapp.com/saml/acs"
   ],
   "oidc_conformant": true,
   "is_first_party": true,
@@ -21,9 +21,8 @@
   "client_aliases": [],
   "client_metadata": {
     "outbound_sso": "true",
-    "partner_name": "Vinsol - 1",
-    "use_signed_cert": "true",
-    "custom_certificate_name": "GR_SSO_ADMIN_OUTBOUND_ENCRYPTION_CERTIFICATE_TEST"
+    "partner_name": "Vinsol",
+    "use_signed_cert": "true"
   },
   "token_endpoint_auth_method": "client_secret_post",
   "app_type": "regular_web",
@@ -43,8 +42,68 @@
       "dataMappings": [
         {
           "type": "static",
-          "key": "Test Key",
-          "value": "primary_first_name"
+          "key": "partnerId",
+          "value": "Vinsol"
+        },
+        {
+          "type": "dynamic",
+          "key": "userId",
+          "value": "id"
+        },
+        {
+          "type": "dynamic",
+          "key": "firstName",
+          "value": "first_name"
+        },
+        {
+          "type": "dynamic",
+          "key": "lastName",
+          "value": "last_name"
+        },
+        {
+          "type": "dynamic",
+          "key": "dateOfBirth",
+          "value": "dob",
+          "format": "%Y%m%d"
+        },
+        {
+          "type": "conditional",
+          "key": "relationship",
+          "value": "3",
+          "conditions": [
+            {
+              "when": [
+                {
+                  "lhs": "relationship",
+                  "opr": "eq",
+                  "rhs": "Member"
+                }
+              ],
+              "then": "1"
+            },
+            {
+              "when": [
+                {
+                  "lhs": "relationship",
+                  "opr": "eq",
+                  "rhs": "Spouse"
+                }
+              ],
+              "then": "2"
+            }
+          ]
+        },
+        {
+          "type": "dynamic",
+          "key": "relationshipRaw",
+          "value": "relationship",
+          "format": ""
+        },
+        {
+          "type": "dynamic",
+          "key": "customerName",
+          "value": "customer_name",
+          "format": ""
         }
       ]
     }
