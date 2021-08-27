@@ -1,6 +1,6 @@
 {
   "is_token_endpoint_ip_header_trusted": false,
-  "name": "sso-test",
+  "name": "sso-test-app-one",
   "description": "",
   "callbacks": [
     "https://herokuapp.com/saml/acs"
@@ -22,7 +22,8 @@
   "client_metadata": {
     "outbound_sso": "true",
     "partner_name": "Vinsol",
-    "use_signed_cert": "true"
+    "use_signed_cert": "true",
+    "custom_certificate_name": "GR_SSO_ADMIN_OUTBOUND_ENCRYPTION_CERTIFICATE_TEST"
   },
   "token_endpoint_auth_method": "client_secret_post",
   "app_type": "regular_web",
