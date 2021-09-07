@@ -1,0 +1,33 @@
+{
+  "strategy": "samlp",
+  "name": "test-vinsol",
+  "is_domain_connection": false,
+  "enabled_clients": [
+    "sso-web"
+  ],
+  "options": {
+    "set_user_root_attributes": "on_first_login",
+    "protocolBinding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+    "debug": false,
+    "signSAMLRequest": true,
+    "signatureAlgorithm": "rsa-sha256",
+    "digestAlgorithm": "sha256",
+    "fieldsMap": {},
+    "user_id_attribute": "NameID",
+    "signInEndpoint": "##BASE_APP_URL##",
+    "idpinitiated": {
+      "client_id": "##SSO_WEB_CLIENT_ID##",
+      "client_protocol": "samlp",
+      "client_authorizequery": "redirect_uri=##BASE_APP_URL##/saml/consume"
+    },
+    "signingCert": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNWRENDQWIyZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRMEZBREJITVFzd0NRWURWUVFHRXdKcGJqRVMKTUJBR0ExVUVDQXdKVG1WM0lFUmxiR2hwTVE4d0RRWURWUVFLREFaV2FXNXpiMnd4RXpBUkJnTlZCQU1NQ25acApibk52YkM1amIyMHdIaGNOTWpFd056STBNRE0wTkRNd1doY05Nakl3TnpJME1ETTBORE13V2pCSE1Rc3dDUVlEClZRUUdFd0pwYmpFU01CQUdBMVVFQ0F3SlRtVjNJRVJsYkdocE1ROHdEUVlEVlFRS0RBWldhVzV6YjJ3eEV6QVIKQmdOVkJBTU1DblpwYm5OdmJDNWpiMjB3Z1o4d0RRWUpLb1pJaHZjTkFRRUJCUUFEZ1kwQU1JR0pBb0dCQU5pcwovN0J5R2xwK0FJQll5MFNpV3NyTjUzSStHN1hwUlpRdHFobVI2ekZVZVVnZFI2YU1DekdhM1dQdUpZYW4xMlRFCkFpSDFPUkpCRU5kOEVyam9oTCtrU3owVVhHenpla2FkWnN5dnB4bzJIcndMb084Nk9pdDVJK25BZzRCdFRwODUKK3pCcExkR2xyYldCUWc0dzdjdnFySlhxdzhGZkFZbmw3c0dDUlJMREFnTUJBQUdqVURCT01CMEdBMVVkRGdRVwpCQlN2WUdxNVRUUG04MVZGaGJBWDdaR08vbjU5RGpBZkJnTlZIU01FR0RBV2dCU3ZZR3E1VFRQbTgxVkZoYkFYCjdaR08vbjU5RGpBTUJnTlZIUk1FQlRBREFRSC9NQTBHQ1NxR1NJYjNEUUVCRFFVQUE0R0JBQmxEU1FmbC81SXAKWjFRakhNaEJkQXJxOTZtakdaSDIveHRtQ0RjNVJFTm1ybWxLajI3WHJ6cU1Lb1hKRklqQW1MV2tBNS84Y2kwMgoxRVBhWitGdWx4TkxvK3N0cVpMYkdPeWc1eWFPaFlXRDM5UCt4NGdCYUw0VHBtbE16TXBXTmx4SWZVbEF5WWFKCnViejRvbzY2VEkvN2pkbTA3MTJ4K2dvVGZUaVcwMWhWCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0=",
+    "decryptionKey": {
+      "key": "##GR_SSO_ADMIN_INBOUND_ENCRYPTION_PRIVATE_KEY_TEST##",
+      "cert": "##GR_SSO_ADMIN_INBOUND_ENCRYPTION_CERTIFICATE_TEST##"
+    },
+    "signing_key": {
+      "key": "##GR_SSO_ADMIN_INBOUND_ENCRYPTION_PRIVATE_KEY_TEST##",
+      "cert": "##GR_SSO_ADMIN_INBOUND_ENCRYPTION_CERTIFICATE_TEST##"
+    }
+  }
+}
