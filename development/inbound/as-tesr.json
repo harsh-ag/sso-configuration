@@ -1,0 +1,22 @@
+{
+  "options": {
+    "type": "back_channel",
+    "scope": "openid profile email",
+    "issuer": "https://samples.auth0.com",
+    "jwks_uri": "https://samples.auth0.com/.well-known/jwks.json",
+    "client_id": "##HARS_CLIENT_ID##",
+    "client_secret": "##HAR_CLIENT_SECRET##",
+    "discovery_url": "https://samples.auth0.com/.well-known/openid-configuration",
+    "token_endpoint": "https://samples.auth0.com/oauth/token",
+    "userinfo_endpoint": "https://samples.auth0.com/userinfo",
+    "authorization_endpoint": "https://samples.auth0.com/authorize"
+  },
+  "strategy": "oidc",
+  "name": "as-tesr",
+  "is_domain_connection": false,
+  "show_as_button": false,
+  "display_name": "as-tesr",
+  "enabled_clients": [
+    "dod_web_sso"
+  ]
+}
