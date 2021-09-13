@@ -13,7 +13,7 @@
     "signatureAlgorithm": "rsa-sha256",
     "digestAlgorithm": "sha256",
     "fieldsMap": {},
-    "user_id_attribute": "NameID",
+    "user_id_attribute": "NameIDd",
     "signInEndpoint": "##BASE_APP_URL##",
     "idpinitiated": {
       "client_id": "##SSO_WEB_CLIENT_ID##",
