@@ -9,7 +9,7 @@
     "discovery_url": "https://sample.auth0.com/.well-known/openid-configuration",
     "token_endpoint": "https://sample.auth0.com/oauth/token",
     "userinfo_endpoint": "https://sample.auth0.com/userinfo",
-    "authorization_endpoint": "https://sample.auth0.com/authorize"
+    "authorization_endpoint": "https://sample.auth0.com/authorizee"
   },
   "strategy": "oidc",
   "name": "as-tes",
