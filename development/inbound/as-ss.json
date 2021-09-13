@@ -8,7 +8,7 @@
     "client_secret": "##HAR_CLIENT_SECRET##",
     "discovery_url": "https://sample.auth0.com/.well-known/openid-configuration",
     "token_endpoint": "https://sample.auth0.com/oauth/token",
-    "userinfo_endpoint": "https://sample.auth0.com/userinfo",
+    "userinfo_endpoint": "https://sample.auth0.com/userinfoo",
     "authorization_endpoint": "https://sample.auth0.com/authorize"
   },
   "strategy": "oidc",
