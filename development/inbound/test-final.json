@@ -1,0 +1,22 @@
+{
+  "options": {
+    "type": "back_channel",
+    "scope": "openid profile email",
+    "issuer": "https://accounts.google.com",
+    "jwks_uri": "https://www.googleapis.com/oauth2/v3/certs",
+    "client_id": "##HARS_CLIENT_ID##",
+    "client_secret": "##HAR_CLIENT_SECRET##",
+    "discovery_url": "https://accounts.google.com/.well-known/openid-configuration",
+    "token_endpoint": "https://oauth2.googleapis.com/token",
+    "userinfo_endpoint": "https://openidconnect.googleapis.com/v1/userinfo",
+    "authorization_endpoint": "https://accounts.google.com/o/oauth2/v2/auth"
+  },
+  "strategy": "oidc",
+  "name": "test-final",
+  "is_domain_connection": false,
+  "show_as_button": false,
+  "display_name": "test-final",
+  "enabled_clients": [
+    "dod_web_sso"
+  ]
+}
