@@ -22,9 +22,10 @@
   "client_metadata": {
     "outbound_sso": "true",
     "partner_name": "Vinsol",
-    "certificate_name": "GR_SSO_ADMIN_OUTBOUND_ENCRYPTION_CERTIFICATE_TST",
+    "certificate_name": "GR_SSO_ADMIN_OUTBOUND_ENCRYPTION_CERTIFICATE_TEST",
     "use_signed_cert": "false",
-    "relay_state": ""
+    "relay_state": "",
+    "use_encryption_cert": true
   },
   "token_endpoint_auth_method": "client_secret_post",
   "app_type": "regular_web",
